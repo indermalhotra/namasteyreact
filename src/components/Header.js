@@ -1,3 +1,4 @@
+import { NavLink } from "react-router";
 import { LOGO_URL } from "../utils/constant";
 
 const Header = () => {
@@ -12,9 +13,9 @@ const Header = () => {
       </div>
       <div className="nav-items">
         <ul>
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+          <li><NavLink to="/">Home</NavLink></li>
+          <li><NavLink to="/about">About</NavLink></li>
+          <li><NavLink to="/contact">Contact</NavLink></li>
         </ul>
       </div>
     </div>
