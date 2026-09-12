@@ -1,5 +1,6 @@
 *{
-    font-family:Arial, Helvetica, sans-serif
+    font-family:Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
 }
 .header{
     display: flex;
@@ -9,6 +10,9 @@
 }
 .logo{
     height: 100px;
+}
+.search{
+    padding: 20px;
 }
 .nav-items > ul{
     display: flex;
@@ -24,9 +28,34 @@
     gap: 20px;
 }
 .res-card{
-    width: 300px;
-
-
-    
+    max-width:300px;
+    width:25%;
     border: 1px solid #555;
+    padding: 5px;
+}
+.res-logo{
+    width: 100%;
+}
+.filter{
+    padding: 20px;
+}
+
+/* HTML: <div class="loader"></div> */
+.loader {
+  width: 45px;
+  aspect-ratio: .75;
+  --c:no-repeat linear-gradient(#000 0 0);
+  background: 
+    var(--c) 0%   100%,
+    var(--c) 50%  100%,
+    var(--c) 100% 100%;
+  background-size: 20% 65%;
+  animation: l8 1s infinite linear;
+}
+@keyframes l8 {
+  16.67% {background-position: 0% 0%  ,50% 100%,100% 100%}
+  33.33% {background-position: 0% 0%  ,50% 0%  ,100% 100%}
+  50%    {background-position: 0% 0%  ,50% 0%  ,100% 0%  }
+  66.67% {background-position: 0% 100%,50% 0%  ,100% 0%  }
+  83.33% {background-position: 0% 100%,50% 100%,100% 0%  }
 }
